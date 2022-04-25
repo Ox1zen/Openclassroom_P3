@@ -1,0 +1,7 @@
+/* Création de variables pour les 3 couleurs principales du site */
+:root
+{
+    --brand-softpurple: #9356DC;
+    --brand-softpink: #FF79DA;
+    --brand-softgreen: #99E2D0;
+}
