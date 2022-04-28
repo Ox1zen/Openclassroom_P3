@@ -1,30 +1,191 @@
 @import url('http://fonts.cdnfonts.com/css/roboto');
-@import url('http://fonts.cdnfonts.com/css/shrikhand');
-/* Création de variables pour les 3 couleurs principales du site */
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+// @import url('http://fonts.cdnfonts.com/css/shrikhand');
+
+// Création de variables pour les 3 couleurs principales du site
 :root
 {
     --brand-softpurple: #9356DC;
     --brand-softpink: #FF79DA;
-    --brand-softgreen: #99E2D0;
+    --brand-darkgrey: #353535;
+    --brand-softteal: #99E2D0;
+    --brand-white: #FFFFFF;
+    --brand-darkwhite: #EAEAEA;
+    --brand-almostwhite: #F6F6F6;
 }
 body
 {
     font-family: 'Roboto', sans-serif;
-    // font-family: 'Roboto Thin', sans-serif; //
-   // font-family: 'Roboto Light', sans-serif; //
-   // font-family: 'Roboto Medium', sans-serif; //
-   // font-family: 'Roboto Black', sans-serif; //
+    // font-family: 'Roboto Thin', sans-serif; 
+    // font-family: 'Roboto Light', sans-serif; 
+    // font-family: 'Roboto Medium', sans-serif; 
+    // font-family: 'Roboto Black', sans-serif; 
 
 }
-h1 //,h2,h3,h4,h5,h6//
+h1,h4 //,h2,h3,h5,h6
 {
-    font-family: 'Shrikhand', sans-serif;
+    // font-family: 'Shrikhand', sans-serif;
+    font-family: 'Shrikhand', cursive;
 }
 
+// [ PAGES DES MENUS ]
 
-// a supprimer plus tard //
-.restaurants-list__card__image
+// HEADER
+.header
 {
-    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    box-shadow: 0px -5px 30px rgb(0, 0, 0);
 }
-//  //
+.fa-arrow-left
+{
+    font-size: 25px;
+    color: var(--brand-darkgrey);
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+.header__logo
+{
+    height: 32px;
+}
+
+// MAIN
+.restaurant-image
+{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    position: absolute;
+    top: 60px;
+    z-index: -1;
+}
+.restaurant-page
+{
+    background-color: var(--brand-almostwhite);
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    margin-top: 240px;
+}
+.restaurant-page__title
+{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    font-weight: 400;
+    font-size: 28px;
+}
+.restaurant-page__title__icone
+{
+    position: relative;
+    right: 10px;
+}
+// bloc ENTRÉES PLAT ET DESSERT
+.restaurant-page__entry,.restaurant-page__dish,.restaurant-page__desert
+{
+    margin-top: 30px;
+}
+// Les titres entrée plats et desserts
+.restaurant-page__entry__title,.restaurant-page__dish__title,.restaurant-page__desert__title
+{
+    display: inline;
+    margin-left: 35px;
+    margin-top: 20px;
+    border-bottom: 3px solid var(--brand-softteal);
+    font-weight: 100;
+    color: var(--brand-darkgrey);
+}
+// Styles des cartes de menu
+.restaurant-page__entry__card,.restaurant-page__dish__card,.restaurant-page__desert__card
+{
+    background-color: var(--brand-white);
+    border-radius: 20px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 0px 0px 30px #d3d3d3;
+    height: 75px;
+}
+// titre des cartes
+.restaurant-page__entry__card__name,.restaurant-page__dish__card__name,.restaurant-page__desert__card__name
+{
+    position: relative;
+    top: 12px;
+    margin-left: 15px;
+}
+// Texte des cartes
+.restaurant-page__entry__card__text,.restaurant-page__dish__card__text,.restaurant-page__desert__card__text
+{
+    position: relative;
+    margin-left: 15px;
+    color: var(--brand-darkgrey);
+}
+// Prix des cartes
+.restaurant-page__entry__card__price,.restaurant-page__dish__card__price,.restaurant-page__desert__card__price
+{
+    display: inline;
+    color: var(--brand-darkgrey);
+    position: relative;
+    top: -35px;
+    left: 340px;
+}
+// Bouton commander
+.restaurant-page__place-order-button
+{
+    background: linear-gradient(var(--brand-softpink),var(--brand-softpurple));
+    color: var(--brand-white);
+    width: 50%;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 30px;
+}
+// FOOTER
+.footer
+{
+    height: 200px;
+    background-color: var(--brand-darkgrey);
+}
+.footer__logo
+{
+    color: var(--brand-white);
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 40px;
+    padding-top: 25px;
+    margin-top: 0px;
+}
+.footer__list
+{
+    list-style: none;
+}
+.footer__list__item
+{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.footer__list__item__link
+{
+    color: var(--brand-white);
+    text-decoration: none;
+
+}
+// Icone ustensil du footer
+.fa-utensils
+{
+    font-size: 15px;
+    margin-right: 8px;
+}
+// Icone poignée de main du footer
+.fa-hands-helping
+{
+    font-size: 12px;
+    margin-right: 5px;
+}

@@ -14,21 +14,26 @@
     <!-- Importation des icones de font awesome -->
     <script src="https://kit.fontawesome.com/094820c2ba.js" crossorigin="anonymous"></script>
     <!-- Importation des polices d'écriture -->
-    <link href="http://fonts.cdnfonts.com/css/shrikhand" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
     <!-- Titre de la page -->
-    <title>Le délice des sens</title>
+    <title>La note enchantée</title>
 </head>
 
 <body>
     <!-- Haut de la page -->
     <header class="header">
+        <!-- Flèche de retour a la page précédente -->
+        <a href="./index.html"><i class="fas fa-arrow-left"></i></a>
         <!-- Image du logo du haut de la page -->
         <img class="header__logo" src="./Assets/Images/logo/ohmyfood.png" alt="Logo du site Oh my food en haut de la page">
     </header>
 
     <!-- Contenu Principal de la page -->
     <main>
+        <img class="restaurant-image" src="./Assets/Images/restaurants/le-delice-des-sens.jpg" alt="Image d'un plat du restaurant Le délice des sens">
         <!-- Partie contenant le titre du restaurant et le menu détaillé -->
         <div class="restaurant-page">
             <h1 class="restaurant-page__title">
@@ -38,7 +43,7 @@
 
             <!-- Partie contenant les entrée -->
             <section class="restaurant-page__entry">
-                <h2 class="restaurant-page__entry__title">Entrées</h2>
+                <h2 class="restaurant-page__entry__title">ENTRÉES</h2>
 
                 <article class="restaurant-page__entry__card">
                     <h3 class="restaurant-page__entry__card__name">Tartare de thon</h3>
@@ -61,7 +66,7 @@
 
             <!-- Partie contenant les plats -->
             <section class="restaurant-page__dish">
-                <h2 class="restaurant-page__dish__title">Plats</h2>
+                <h2 class="restaurant-page__dish__title">PLATS</h2>
 
                 <article class="restaurant-page__dish__card">
                     <h3 class="restaurant-page__dish__card__name">Poulet rôti aux herbes de Provence</h3>
@@ -84,7 +89,7 @@
 
             <!-- Partie Contenant les desserts -->
             <section class="restaurant-page__desert">
-                <h2 class="restaurant-page__desert__title">Desserts</h2>
+                <h2 class="restaurant-page__desert__title">DESSERTS</h2>
 
                 <article class="restaurant-page__desert__card">
                     <h3 class="restaurant-page__desert__card__name">Farandole de desserts</h3>
@@ -104,29 +109,28 @@
                     <p class="restaurant-page__desert__card__price">23€</p>
                 </article>
             </section>
+            <!-- Bouton "Commander" en bas du Menu -->
+            <button class="restaurant-page__place-order-button">Commander</button>
         </div>
-
-        <!-- Bouton "Commander" en bas du Menu -->
-        <button class="restaurant-page__place-order-button">Commander</button>
     </main>
 
     <!-- Bas de page -->
     <footer class="footer">
         <!-- Image du logo en bas de page -->
-        <img class="footer__logo" src="./Assets/Images/logo/ohmyfood.png" alt="Logo du site Oh my food en bas de page">
+        <h4 class="footer__logo">ohmyfood</h4>
 
         <!-- Liste de liens du footer -->
         <ul class="footer__list">
             <li class="footer__list__item">
-                <a class="footer_list_item_link" href="#">
+                <a class="footer__list__item__link" href="#">
                     <!-- icône : ustensil -->
                     <i class="fas fa-utensils"></i>
                     Proposer un restaurant
                 </a> 
             </li>
 
-            <li class="footer__list__item">
-                <a class="footer_list_item_link" href="">
+            <li class="footer___list__item">
+                <a class="footer__list__item__link" href="">
                     <!-- icône : poignée de main -->
                     <i class="fas fa-hands-helping"></i>
                     Devenir partenaire
@@ -134,13 +138,13 @@
             </li>
 
             <li class="footer__list__item">
-                <a class="footer_list_item_link" href="">
+                <a class="footer__list__item__link" href="">
                     Mentions légales
                 </a>
             </li>
 
             <li class="footer__list__item">
-                <a class="footer_list_item_link" href="">
+                <a class="footer__list__item__link" href="">
                     Contact
                 </a>
             </li>
