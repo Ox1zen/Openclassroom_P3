@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./Assets/css/normalize.css">
     <link rel="stylesheet" href="./Assets/css/style.css">
     <!-- Importation des icones de font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/094820c2ba.js" crossorigin="anonymous"></script>
     <!-- Importation des polices d'écriture -->
     <link href="http://fonts.cdnfonts.com/css/shrikhand" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
@@ -20,6 +20,7 @@
     <title>Accueil - Ohmyfood</title>
 </head>
 
+<!-- Corps de la page -->
 <body>
     <!-- Haut de la page -->
     <header class="header">
@@ -32,7 +33,7 @@
         <!-- Bloc contenant la localisation -->
         <div class="location">
             <!-- icône : point de localisation -->
-            <i class="fa-solid fa-location-dot"></i>
+            <div class="location__icone"><i class="fas fa-map-marker-alt"></i>
             <!-- Texte du bloc contenant le nom de la localisation -->
             <p class="location__text">Paris, Belleville</p>
         </div>
@@ -49,47 +50,52 @@
             <h2 class="tutorial__title">Fonctionnement</h2>
             <div class="tutorial__link">
                 <!-- icône : écran mobile -->
-                <i class="fa-solid fa-mobile-screen"></i>
-                <p>Choisissez un restaurant</p>
+                <i class="fas fa-mobile-alt"></i>
+                <p class="tutorial__link__text">Choisissez un restaurant</p>
             </div>
             <div class="tutorial__link">
                 <!-- icône : liste ul -->
-                <i class="fa-regular fa-list-ul"></i>
-                <p>Composez votre menu</p>
+                <i class="fas fa-list-ul"></i>
+                <p class="tutorial__link__text">Composez votre menu</p>
             </div>
             <div class="tutorial__link">
                 <!-- icône : Store -->
-                <i class="fa-regular fa-store"></i>
-                <p>Dégustez au restaurant</p>
+                <i class="fas fa-store"></i>
+                <p class="tutorial__link__text">Dégustez au restaurant</p>
             </div>
         </section>
 
         <!-- liste des restaurants -->
-        <section class="restaurants">
-            <h2 class="restaurants__title">Restaurants</h2>
+        <section class="restaurants-list">
+            <h2 class="restaurants-list__title">Restaurants</h2>
 
-            <article class="restaurants__card">
-                <img class="card__image" src="./Assets/Images/restaurants/la-palette-du-gout.jpg" alt="Image de prévisualisation du restaurant nommé La palette du goût">
-                <h3 class="card__title">La palette du goût</h3>
-                <p class="card__text">Ménilmontant</p>
+            <article class="restaurants-list__card">
+                <img class="restaurants-list__card__image" src="./Assets/Images/restaurants/la-palette-du-gout.jpg" alt="Image de prévisualisation du restaurant nommé La palette du goût">
+                <h3 class="restaurants-list__card__title">La palette du goût</h3>
+                <p class="restaurants-list__card__text">Ménilmontant</p>
+                <a class="restaurants-list__card__icone" title="J'aime"><i class="far fa-heart"></i></a>
+
             </article>
 
-            <article class="restaurants__card">
-                <img class="card__image" src="./Assets/Images/restaurants/la-note-enchantée.jpg" alt="Image de prévisualisation du restaurant nommé La note enchantée">
-                <h3 class="card__title">La note enchantée</h3>
-                <p class="card__text">Charonne</p>
+            <article class="restaurants-list__card">
+                <img class="restaurants-list__card__image" src="./Assets/Images/restaurants/la-note-enchantée.jpg" alt="Image de prévisualisation du restaurant nommé La note enchantée">
+                <h3 class="restaurants-list__card__title">La note enchantée</h3>
+                <p class="restaurants-list__card__text">Charonne</p>
+                <a class="restaurants-list__card__icone" title="J'aime"><i class="far fa-heart"></i></a>
             </article>
 
-            <article class="restaurants__card">
-                <img class="card__image" src="./Assets/Images/restaurants/a-la-francaise.jpg" alt="Image de prévisualisation du restaurant nommé À la française ">
-                <h3 class="card__title">À la française</h3>
-                <p class="card__text"> Cité Rouge</p>
+            <article class="restaurants-list__card">
+                <img class="restaurants-list__card__image" src="./Assets/Images/restaurants/a-la-francaise.jpg" alt="Image de prévisualisation du restaurant nommé À la française ">
+                <h3 class="restaurants-list__card__title">À la française</h3>
+                <p class="restaurants-list__card__text"> Cité Rouge</p>
+                <a class="restaurants-list__card__icone" title="J'aime"><i class="far fa-heart"></i></a>
             </article>
 
-            <article class="restaurants__card">
-                <img class="card__image" src="./Assets/Images/restaurants/le-delice-des-sens.jpg" alt="Image de prévisualisation du restaurant nommé Le délice des sens">
-                <h3 class="card__title">Le délice des sens</h3>
-                <p class="card__text">Folie-Méricourt</p>
+            <article class="restaurants-list__card">
+                <img class="restaurants-list__card__image" src="./Assets/Images/restaurants/le-delice-des-sens.jpg" alt="Image de prévisualisation du restaurant nommé Le délice des sens">
+                <h3 class="restaurants-list__card__title">Le délice des sens</h3>
+                <p class="restaurants-list__card__text">Folie-Méricourt</p>
+                <a class="restaurants-list__card__icone" title="J'aime"><i class="far fa-heart"></i></a>
             </article>
         </section>
     </main>
@@ -98,11 +104,36 @@
     <footer class="footer">
         <!-- Image du logo en bas de page -->
         <img class="footer__logo" src="./Assets/Images/logo/ohmyfood.png" alt="Logo du site Oh my food en bas de page">
-        <ul>
-            <li class="footer__link">Proposer un restaurant</li>
-            <li class="footer__link">Devenir partenaire</li>
-            <li class="footer__link">Mentions légales</li>
-            <li class="footer__link">Contact</li>
+
+        <!-- Liste de liens du footer -->
+        <ul class="footer__list">
+            <li class="footer__list__item">
+                <a class="footer_list_item_link" href="#">
+                    <!-- icône : ustensil -->
+                    <i class="fas fa-utensils"></i>
+                    Proposer un restaurant
+                </a> 
+            </li>
+
+            <li class="footer__list__item">
+                <a class="footer_list_item_link" href="">
+                    <!-- icône : poignée de main -->
+                    <i class="fas fa-hands-helping"></i>
+                    Devenir partenaire
+                </a>
+            </li>
+
+            <li class="footer__list__item">
+                <a class="footer_list_item_link" href="">
+                    Mentions légales
+                </a>
+            </li>
+
+            <li class="footer__list__item">
+                <a class="footer_list_item_link" href="">
+                    Contact
+                </a>
+            </li>
         </ul>
     </footer>
     

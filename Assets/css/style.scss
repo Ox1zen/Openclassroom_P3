@@ -1,0 +1,30 @@
+@import url('http://fonts.cdnfonts.com/css/roboto');
+@import url('http://fonts.cdnfonts.com/css/shrikhand');
+/* Création de variables pour les 3 couleurs principales du site */
+:root
+{
+    --brand-softpurple: #9356DC;
+    --brand-softpink: #FF79DA;
+    --brand-softgreen: #99E2D0;
+}
+body
+{
+    font-family: 'Roboto', sans-serif;
+    // font-family: 'Roboto Thin', sans-serif; //
+   // font-family: 'Roboto Light', sans-serif; //
+   // font-family: 'Roboto Medium', sans-serif; //
+   // font-family: 'Roboto Black', sans-serif; //
+
+}
+h1 //,h2,h3,h4,h5,h6//
+{
+    font-family: 'Shrikhand', sans-serif;
+}
+
+
+// a supprimer plus tard //
+.restaurants-list__card__image
+{
+    width: 250px;
+}
+//  //
