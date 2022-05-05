@@ -18,6 +18,33 @@ h1, h4 {
   font-family: "Shrikhand", cursive;
 }
 
+.restaurants-list__card__image {
+  width: 250px;
+}
+
+.location {
+  background-color: var(--brand-darkwhite);
+  height: 50px;
+}
+
+.intro {
+  background-color: var(--brand-almostwhite);
+  height: 300px;
+}
+
+.tutorial {
+  background-color: var(--brand-white);
+  height: 400px;
+}
+
+.restaurants-list {
+  height: 800px;
+}
+
+#bloc-page > * > * > * > * {
+  margin-left: 5%;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -30,7 +57,8 @@ h1, h4 {
   font-size: 25px;
   color: var(--brand-darkgrey);
   position: absolute;
-  left: 20px;
+  left: 0px;
+  margin-left: 5%;
   top: 15px;
 }
 
@@ -55,17 +83,21 @@ h1, h4 {
   margin-top: 240px;
 }
 
-.restaurant-page__title {
-  display: flex;
-  justify-content: space-around;
+.restaurant-page__name {
+  width: 95%;
+}
+
+.restaurant-page__name__title {
   padding-top: 40px;
   font-weight: 400;
   font-size: 28px;
 }
 
-.restaurant-page__title__icone {
+.restaurant-page__name__title__icone {
   position: relative;
-  right: 10px;
+  left: 84.1%;
+  top: -45px;
+  font-size: 24px;
 }
 
 .restaurant-page__entry, .restaurant-page__dish, .restaurant-page__desert {
@@ -74,7 +106,6 @@ h1, h4 {
 
 .restaurant-page__entry__title, .restaurant-page__dish__title, .restaurant-page__desert__title {
   display: inline;
-  margin-left: 35px;
   margin-top: 20px;
   border-bottom: 3px solid var(--brand-softteal);
   font-weight: 100;
@@ -85,8 +116,6 @@ h1, h4 {
   background-color: var(--brand-white);
   border-radius: 20px;
   width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
   box-shadow: 0px 0px 30px #d3d3d3;
   height: 75px;
 }
@@ -106,9 +135,10 @@ h1, h4 {
 .restaurant-page__entry__card__price, .restaurant-page__dish__card__price, .restaurant-page__desert__card__price {
   display: inline;
   color: var(--brand-darkgrey);
+  font-weight: 600;
   position: relative;
+  left: 88%;
   top: -35px;
-  left: 340px;
 }
 
 .restaurant-page__place-order-button {
@@ -135,13 +165,13 @@ h1, h4 {
   color: var(--brand-white);
   font-weight: 400;
   font-size: 20px;
-  margin-left: 40px;
   padding-top: 25px;
   margin-top: 0px;
 }
 
 .footer__list {
   list-style: none;
+  padding: 0;
 }
 
 .footer__list__item {

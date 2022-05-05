@@ -19,137 +19,142 @@
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
     <!-- Titre de la page -->
-    <title>La note enchantée</title>
+    <title>À la française</title>
 </head>
 
 <body>
-    <!-- Haut de la page -->
-    <header class="header">
-        <!-- Flèche de retour a la page précédente -->
-        <a href="./index.html"><i class="fas fa-arrow-left"></i></a>
-        <!-- Image du logo du haut de la page -->
-        <img class="header__logo" src="./Assets/Images/logo/ohmyfood.png" alt="Logo du site Oh my food en haut de la page">
-    </header>
+    <div id="bloc-page">
+        <!-- Haut de la page -->
+        <header class="header">
+            <!-- Flèche de retour a la page précédente -->
+            <a href="./index.html"><i class="fas fa-arrow-left"></i></a>
+            <!-- Image du logo du haut de la page -->
+            <img class="header__logo" src="./Assets/Images/logo/ohmyfood.png" alt="Logo du site Oh my food en haut de la page">
+        </header>
 
-    <!-- Contenu Principal de la page -->
-    <main>
-        <img class="restaurant-image" src="./Assets/Images/restaurants/a-la-francaise.jpg" alt="Image d'un plat du restaurant À la française">
-        <!-- Partie contenant le titre du restaurant et le menu détaillé -->
-        <div class="restaurant-page">
-            <h1 class="restaurant-page__title">
-                À la française
-                <a class="restaurant-page__title__icone" title="J'aime"><i class="far fa-heart"></i></a>
-            </h1>
+        <!-- Contenu Principal de la page -->
+        <main>
+            <img class="restaurant-image" src="./Assets/Images/restaurants/a-la-francaise.jpg" alt="Image d'un plat du restaurant À la française">
+            <!-- Partie contenant le titre du restaurant et le menu détaillé -->
+            <div class="restaurant-page">
+                <div class="restaurant-page__name">
+                    <h1 class="restaurant-page__name__title">À la française</h1>
+                    <a class="restaurant-page__name__title__icone" title="J'aime"><i class="far fa-heart"></i></a>
+                </div>
 
-            <!-- Partie contenant les entrée -->
-            <section class="restaurant-page__entry">
-                <h2 class="restaurant-page__entry__title">ENTRÉES</h2>
+                <!-- Partie contenant les entrée -->
+                <section class="restaurant-page__entry">
+                    <h2 class="restaurant-page__entry__title">ENTRÉES</h2>
 
-                <article class="restaurant-page__entry__card">
-                    <h3 class="restaurant-page__entry__card__name">Tartare de poulpe acidulé</h3>
-                    <p class="restaurant-page__entry__card__text">Aux zestes d'orange</p>
-                    <p class="restaurant-page__entry__card__price">25€</p>
-                </article>
+                    <article class="restaurant-page__entry__card">
+                        <h3 class="restaurant-page__entry__card__name">Tartare de poulpe acidulé</h3>
+                        <p class="restaurant-page__entry__card__text">Aux zestes d'orange</p>
+                        <p class="restaurant-page__entry__card__price">25€</p>
+                    </article>
 
-                <article class="restaurant-page__entry__card">
-                    <h3 class="restaurant-page__entry__card__name">Velouté de légumes d'antan</h3>
-                    <p class="restaurant-page__entry__card__text">Carotte, panais, topinambour</p>
-                    <p class="restaurant-page__entry__card__price">35€</p>
-                </article>
+                    <article class="restaurant-page__entry__card">
+                        <h3 class="restaurant-page__entry__card__name">Velouté de légumes d'antan</h3>
+                        <p class="restaurant-page__entry__card__text">Carotte, panais, topinambour</p>
+                        <p class="restaurant-page__entry__card__price">35€</p>
+                    </article>
 
-                <article class="restaurant-page__entry__card">
-                    <h3 class="restaurant-page__entry__card__name">Soupe à l'oignon</h3>
-                    <p class="restaurant-page__entry__card__text">Revisitée</p>
-                    <p class="restaurant-page__entry__card__price">20€</p>
-                </article>
-            </section>
+                    <article class="restaurant-page__entry__card">
+                        <h3 class="restaurant-page__entry__card__name">Soupe à l'oignon</h3>
+                        <p class="restaurant-page__entry__card__text">Revisitée</p>
+                        <p class="restaurant-page__entry__card__price">20€</p>
+                    </article>
+                </section>
 
-            <!-- Partie contenant les plats -->
-            <section class="restaurant-page__dish">
-                <h2 class="restaurant-page__dish__title">PLATS</h2>
+                <!-- Partie contenant les plats -->
+                <section class="restaurant-page__dish">
+                    <h2 class="restaurant-page__dish__title">PLATS</h2>
 
-                <article class="restaurant-page__dish__card">
-                    <h3 class="restaurant-page__dish__card__name">Coquilles Saint-Jacques</h3>
-                    <p class="restaurant-page__dish__card__text">Accompagnées d'une purée de panais</p>
-                    <p class="restaurant-page__dish__card__price">40€</p>
-                </article>
+                    <article class="restaurant-page__dish__card">
+                        <h3 class="restaurant-page__dish__card__name">Coquilles Saint-Jacques</h3>
+                        <p class="restaurant-page__dish__card__text">Accompagnées d'une purée de panais</p>
+                        <p class="restaurant-page__dish__card__price">40€</p>
+                    </article>
 
-                <article class="restaurant-page__dish__card">
-                    <h3 class="restaurant-page__dish__card__name">Magret de canard</h3>
-                    <p class="restaurant-page__dish__card__text">Et parmentier de pommes de terre</p>
-                    <p class="restaurant-page__dish__card__price">35€</p>
-                </article>
+                    <article class="restaurant-page__dish__card">
+                        <h3 class="restaurant-page__dish__card__name">Magret de canard</h3>
+                        <p class="restaurant-page__dish__card__text">Et parmentier de pommes de terre</p>
+                        <p class="restaurant-page__dish__card__price">35€</p>
+                    </article>
 
-                <article class="restaurant-page__dish__card">
-                    <h3 class="restaurant-page__dish__card__name">Pigeonneau d’Ille-et-Vilaine</h3>
-                    <p class="restaurant-page__dish__card__text">Sur son lit de gnocchis aux légumes</p>
-                    <p class="restaurant-page__dish__card__price">44€</p>
-                </article>
-            </section>
+                    <article class="restaurant-page__dish__card">
+                        <h3 class="restaurant-page__dish__card__name">Pigeonneau d’Ille-et-Vilaine</h3>
+                        <p class="restaurant-page__dish__card__text">Sur son lit de gnocchis aux légumes</p>
+                        <p class="restaurant-page__dish__card__price">44€</p>
+                    </article>
+                </section>
 
-            <!-- Partie Contenant les desserts -->
-            <section class="restaurant-page__desert">
-                <h2 class="restaurant-page__desert__title">DESSERTS</h2>
+                <!-- Partie Contenant les desserts -->
+                <section class="restaurant-page__desert">
+                    <h2 class="restaurant-page__desert__title">DESSERTS</h2>
 
-                <article class="restaurant-page__desert__card">
-                    <h3 class="restaurant-page__desert__card__name">Pétales de violettes glacés</h3>
-                    <p class="restaurant-page__desert__card__text">Et purée de noisettes</p>
-                    <p class="restaurant-page__desert__card__price">18€</p>
-                </article>
+                    <article class="restaurant-page__desert__card">
+                        <h3 class="restaurant-page__desert__card__name">Pétales de violettes glacés</h3>
+                        <p class="restaurant-page__desert__card__text">Et purée de noisettes</p>
+                        <p class="restaurant-page__desert__card__price">18€</p>
+                    </article>
 
-                <article class="restaurant-page__desert__card">
-                    <h3 class="restaurant-page__desert__card__name">Fondant au chocolat</h3>
-                    <p class="restaurant-page__desert__card__text">Revisité</p>
-                    <p class="restaurant-page__desert__card__price">22€</p>
-                </article>
+                    <article class="restaurant-page__desert__card">
+                        <h3 class="restaurant-page__desert__card__name">Fondant au chocolat</h3>
+                        <p class="restaurant-page__desert__card__text">Revisité</p>
+                        <p class="restaurant-page__desert__card__price">22€</p>
+                    </article>
 
-                <article class="restaurant-page__desert__card">
-                    <h3 class="restaurant-page__desert__card__name">Millefeuille croustillant</h3>
-                    <p class="restaurant-page__desert__card__text">Myrtilles et pâte d’amande</p>
-                    <p class="restaurant-page__desert__card__price">23€</p>
-                </article>
-            </section>
-            <!-- Bouton "Commander" en bas du Menu -->
-            <button class="restaurant-page__place-order-button">Commander</button>
-        </div>
-    </main>
+                    <article class="restaurant-page__desert__card">
+                        <h3 class="restaurant-page__desert__card__name">Millefeuille croustillant</h3>
+                        <p class="restaurant-page__desert__card__text">Myrtilles et pâte d’amande</p>
+                        <p class="restaurant-page__desert__card__price">23€</p>
+                    </article>
+                </section>
+                <!-- Bouton "Commander" en bas du Menu -->
+                <button class="restaurant-page__place-order-button">Commander</button>
+            </div>
+        </main>
 
-    <!-- Bas de page -->
-    <footer class="footer">
-        <!-- Image du logo en bas de page -->
-        <h4 class="footer__logo">ohmyfood</h4>
+        <!-- Bas de page -->
+        <footer class="footer">
+            <!-- Image du logo en bas de page -->
+            <div>
+                <div>
+                    <h4 class="footer__logo">ohmyfood</h4>
+                </div>
+            </div>
 
-        <!-- Liste de liens du footer -->
-        <ul class="footer__list">
-            <li class="footer__list__item">
-                <a class="footer__list__item__link" href="#">
-                    <!-- icône : ustensil -->
-                    <i class="fas fa-utensils"></i>
-                    Proposer un restaurant
-                </a> 
-            </li>
+            <!-- Liste de liens du footer -->
+            <ul class="footer__list">
+                <li class="footer__list__item">
+                    <a class="footer__list__item__link" href="#">
+                        <!-- icône : ustensil -->
+                        <i class="fas fa-utensils"></i>
+                        Proposer un restaurant
+                    </a> 
+                </li>
 
-            <li class="footer___list__item">
-                <a class="footer__list__item__link" href="">
-                    <!-- icône : poignée de main -->
-                    <i class="fas fa-hands-helping"></i>
-                    Devenir partenaire
-                </a>
-            </li>
+                <li class="footer___list__item">
+                    <a class="footer__list__item__link" href="">
+                        <!-- icône : poignée de main -->
+                        <i class="fas fa-hands-helping"></i>
+                        Devenir partenaire
+                    </a>
+                </li>
 
-            <li class="footer__list__item">
-                <a class="footer__list__item__link" href="">
-                    Mentions légales
-                </a>
-            </li>
+                <li class="footer__list__item">
+                    <a class="footer__list__item__link" href="">
+                        Mentions légales
+                    </a>
+                </li>
 
-            <li class="footer__list__item">
-                <a class="footer__list__item__link" href="">
-                    Contact
-                </a>
-            </li>
-        </ul>
-    </footer>
-    
+                <li class="footer__list__item">
+                    <a class="footer__list__item__link" href="">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
 </body>
 </html>
