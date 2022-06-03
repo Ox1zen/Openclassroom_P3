@@ -245,6 +245,7 @@ h1,h4 //,h2,h3,h5,h6
     // width: 95%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .restaurant-page__name__title
 {
@@ -254,7 +255,7 @@ h1,h4 //,h2,h3,h5,h6
 }
 .restaurant-page__name__title__icone
 {
-    padding-top: 18px;
+    // padding-top: 18px;
     margin-right: 5%;
     text-decoration: none;
     height: 30px;
