@@ -20,52 +20,185 @@ body
     // font-family: 'Roboto Light', sans-serif; 
     // font-family: 'Roboto Medium', sans-serif; 
     // font-family: 'Roboto Black', sans-serif; 
-
 }
 h1,h4 //,h2,h3,h5,h6
 {
     // font-family: 'Shrikhand', sans-serif;
     font-family: 'Shrikhand', cursive;
 }
-
 // [ PAGE D'ACCUEILLE ]
 
 // juste le temps de la mise en page pour les images
-.restaurants-list__card__image
-{
-    width: 250px;
-}
+// .restaurants-list__card__image
+// {
+//     width: 250px;
+// }
 .location
 {
     background-color: var(--brand-darkwhite);
-    height: 50px;
-    // position: absolute;
-    // top: 60px;
-    // z-index: -1;
+    color: var(--brand-darkgrey);
+    height: 72px;
+    display: flex;
+    justify-content: center;
 }
+// icone du point de localisation
+.fa-map-marker-alt
+{
+    // position: relative;
+    top: 15px;
+    left: -30px;
+    font-size: 25px;
+}
+.location__text
+{
+    font-size: 20px;
+    font-weight: 600;
+}
+//partie intro de l'index du site
 .intro
 {
     background-color: var(--brand-almostwhite);
-    height: 300px;
+    text-align: center;
+}
+.intro__title
+{
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 5px;
+    font-size: 28px;
+    padding-top: 20px;
+}
+.intro__text
+{
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 18px;
+    color: var(--brand-darkgrey);
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.intro__button
+{
+    background: linear-gradient(var(--brand-softpink),var(--brand-softpurple));
+    color: var(--brand-white);
+    width: 50%;
+    border-radius: 50px;
+    font-size: 18px;
+    height: 60px;
+    margin-bottom: 80px;
 }
 .tutorial
 {
-    background-color: var(--brand-white);
-    height: 400px;
+    // background-color: var(--brand-softpink);
+    // text-align: center;
+    padding-bottom: 40px;
+}
+.tutorial__title
+{
+    margin-left: 5%;
+    font-size: 34px;
+    padding-top: 30px;
+    margin-bottom: 50px;
+}
+.tutorial__link
+{
+    box-shadow: 0px 10px 30px rgb(204, 204, 204);
+    width: 90%;
+    height: 95px;
+    background-color: #f3f3f3;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-bottom: 35px;
+}
+// Icones
+.fa-mobile-alt
+{
+    color: var(--brand-darkgrey);
+    font-size: 30px;
+    // position: relative;
+    left: 0px;
+}
+.tutorial__link__text__circle-number
+{
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    background-color: var(--brand-softpurple);
+    color: var(--brand-white);
+    position: absolute;
+    left: -11px;
+}
+.tutorial__link__text__circle-number__text
+{
+    margin-top: 15%;
+    margin-left: 30%;
+    font-size: 18px;
+}
+.tutorial__link__text
+{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--brand-darkgrey);
 }
 .restaurants-list
 {
-    height: 800px;
+    background-color: var(--brand-darkwhite)
 }
-
-
-
-// [ PAGES DES MENUS ]
-
-#bloc-page > * > * > * > *
+.restaurants-list__title
+{
+    margin: 0;
+}
+// Liste des restaurants
+.restaurants-list > *
 {
     margin-left: 5%;
 }
+.restaurants-list__title
+{
+    margin-left: 5%;
+    margin-bottom: 20px;
+    padding-top: 40px;
+}
+.restaurants-list__card
+{
+    width: 90%;
+    height: 225px;
+    background-color: var(--brand-white);
+    margin-bottom: 50px;
+    border-radius: 20px;
+    box-shadow: 0px -5px 30px rgb(221, 221, 221);
+}
+.restaurants-list__card__image
+{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 150px;
+    object-fit: cover;
+}
+.restaurants-list__card__title
+{
+    // position: relative;
+    top: -10px;
+    margin-bottom: -10px;
+    margin-left: 5%;
+}
+.restaurants-list__card__text
+{
+    // position: relative;
+    top: -23px;
+    margin-left: 5%;
+}
+
+
+// [ PAGES DES MENUS ]
+// #bloc-page > * > * > * > * 
+//  {
+//      margin-left: 5%;
+// }
 
 // HEADER
 .header
@@ -109,30 +242,34 @@ h1,h4 //,h2,h3,h5,h6
 }
 .restaurant-page__name
 {
-    width: 95%;
+    // width: 95%;
+    display: flex;
+    justify-content: space-between;
 }
 .restaurant-page__name__title
 {
-    padding-top: 40px;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 26.5px;
+    margin-left: 5%;
 }
 .restaurant-page__name__title__icone
 {
-    position: relative;
-    left: 84.1%;
-    top: -45px;
-    font-size: 24px;
+    padding-top: 18px;
+    margin-right: 5%;
+    text-decoration: none;
+    height: 30px;
+    // font-size: 24px;
 }
 // bloc ENTRÉES PLAT ET DESSERT
 .restaurant-page__entry,.restaurant-page__dish,.restaurant-page__desert
 {
     margin-top: 30px;
+    margin-left: 5%;
 }
 // Les titres entrée plats et desserts
 .restaurant-page__entry__title,.restaurant-page__dish__title,.restaurant-page__desert__title
 {
-    display: inline;
+    // display: inline;
     // margin-left: 5%;
     margin-top: 20px;
     border-bottom: 3px solid var(--brand-softteal);
@@ -142,6 +279,7 @@ h1,h4 //,h2,h3,h5,h6
 // Styles des cartes de menu
 .restaurant-page__entry__card,.restaurant-page__dish__card,.restaurant-page__desert__card
 {
+    margin-bottom: 20px;
     background-color: var(--brand-white);
     border-radius: 20px;
     width: 90%;
@@ -154,15 +292,19 @@ h1,h4 //,h2,h3,h5,h6
 .restaurant-page__entry__card__name,.restaurant-page__dish__card__name,.restaurant-page__desert__card__name
 {
     position: relative;
-    top: 12px;
+    bottom: 10px;
     margin-left: 15px;
 }
 // Texte des cartes
 .restaurant-page__entry__card__text,.restaurant-page__dish__card__text,.restaurant-page__desert__card__text
 {
     position: relative;
+    bottom: 20px;
     margin-left: 15px;
     color: var(--brand-darkgrey);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 // Prix des cartes
 .restaurant-page__entry__card__price,.restaurant-page__dish__card__price,.restaurant-page__desert__card__price
@@ -170,18 +312,203 @@ h1,h4 //,h2,h3,h5,h6
     display: inline;
     color: var(--brand-darkgrey);
     font-weight: 600;
-    position: relative;
-    left: 88%;
-    top: -35px;
-    // left: 340px;
-    // margin-right: 5%;
 }
+.fa-heart
+{
+    font-size: 30px;
+    // color: var(--brand-darkgrey);
+    color: linear-gradient(var(--brand-softpink),var(--brand-softpurple));;
+    font-weight: 400;
+}
+.restaurant-page__name__title__icone:focus .fa-heart
+{
+    animation: heart-like 0.5s forwards;
+}
+// .full-heart
+// {
+    // font-size: 30px;
+    // color: var(--brand-softpink);
+    // margin-right: 5%;
+    // position: relative;
+    // top: -30px;
+    // visibility: hidden;
+// }
+// Animations CSS
+
+//animations entrée, plat et dessert:
+.restaurant-page__entry__card,
+.restaurant-page__dish__card,
+.restaurant-page__desert__card
+{
+    display: flex;
+    overflow: hidden;
+}
+.restaurant-page__entry__card:hover .test-animation-icon,
+.restaurant-page__dish__card:hover .test-animation-icon,
+.restaurant-page__desert__card:hover .test-animation-icon
+{
+    animation: icon-frame 0.5s forwards;
+}
+.restaurant-page__entry__card:hover .test-animation-text,
+.restaurant-page__dish__card:hover .test-animation-text,
+.restaurant-page__desert__card:hover .test-animation-text
+{
+    animation: text-frame 0.5s forwards;
+}
+//
+.test-animation-text
+{
+    width: 85%;
+    // background-color: rgb(144, 144, 235);
+}
+.test-animation-price
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 15%;
+    // background-color: yellow;
+}
+.test-animation-icon
+{
+    height: 100%;
+    width: 0%;
+    background-color: var(--brand-softteal)
+}
+.restaurant-page__entry__card:hover .test-animation-icon .fa-check-circle,
+.restaurant-page__dish__card:hover .test-animation-icon .fa-check-circle,
+.restaurant-page__desert__card:hover .test-animation-icon .fa-check-circle
+{
+    animation: icon-rotate 0.5s forwards;
+}
+@keyframes heart-like {
+    0%{
+        color: var(--brand-darkgrey);
+        font-weight: 400;
+        font-size: 28px;
+    }
+    100%{
+        // color: linear-gradient(var(--brand-softpink),var(--brand-softpurple));
+        font-weight: 600;
+    }
+    
+}
+@keyframes icon-rotate {
+    0% {
+        // rotate: (0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        // rotate: (360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes icon-frame {
+
+    0% {
+        width: 0%;
+        // rotate: (360deg);
+    }
+    100%{
+        width: 15%;
+    }
+    
+}
+@keyframes text-frame {
+    
+    0% {
+        width: 85%;
+    }
+    100%{
+        width: 70%;
+    }
+    
+}
+// animation d'arrivé sur la page
+.fade-1
+{
+    animation: fadein 0.5s forwards ease-in-out;
+}
+.fade-2
+{
+    animation: fadein 1s forwards ease-in-out;
+}
+.fade-3
+{
+    animation: fadein 1.5s forwards ease-in-out;
+}
+.fade-4
+{
+    animation: fadein 2s forwards ease-in-out;
+}
+.fade-5
+{
+    animation: fadein 2.5s forwards ease-in-out;
+}
+.fade-6
+{
+    animation: fadein 3s forwards ease-in-out;
+}
+.fade-7
+{
+    animation: fadein 3.5s forwards ease-in-out;
+}
+.fade-8
+{
+    animation: fadein 4s forwards ease-in-out;
+}
+.fade-9
+{
+    animation: fadein 4.5s forwards ease-in-out;
+}
+.fade-10
+{
+    animation: fadein 5s forwards ease-in-out;
+}
+@keyframes fadein {
+    0%{
+        opacity: 0;
+        transform: translateY(5%);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.restaurant-page__desert__card__check-icon
+{
+    // height: 75px;
+    // width: 75px;
+    // background-color: #99E2D0;
+    // border-bottom-right-radius: 20px;
+    // border-top-right-radius: 20px;
+    // position: relative;
+    // left: 333px;
+    // top: -75px;
+}
+.test-animation-icon
+{
+    display: flex;
+}
+.fa-check-circle
+{
+    color: var(--brand-white);
+    font-size: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 // Bouton commander
 .restaurant-page__place-order-button
 {
     background: linear-gradient(var(--brand-softpink),var(--brand-softpurple));
     color: var(--brand-white);
     width: 50%;
+    border-radius: 30px;
     margin-top: 40px;
     margin-bottom: 60px;
     margin-left: 25%;
@@ -190,13 +517,15 @@ h1,h4 //,h2,h3,h5,h6
     padding-right: 50px;
     padding-top: 15px;
     padding-bottom: 15px;
-    border-radius: 30px;
 }
 // FOOTER
 .footer
 {
     height: 200px;
+    width: 100%;
     background-color: var(--brand-darkgrey);
+    // position:absolute;
+    // bottom:-1;
 }
 .footer__logo
 {
@@ -234,7 +563,21 @@ h1,h4 //,h2,h3,h5,h6
     font-size: 12px;
     margin-right: 5px;
 }
-// .footer > *
-// {
-//     margin-left: 5%;
-// }
+.footer > *
+{
+    margin-left: 5%;
+}
+
+@media screen and (min-width: 768px) 
+{
+    .restaurant-page-menu
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    .restaurant-page__entry,.restaurant-page__dish,.restaurant-page__desert
+    {
+        width: 30%;
+    }
+    
+}
