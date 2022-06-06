@@ -317,23 +317,20 @@ h1,h4 //,h2,h3,h5,h6
 .fa-heart
 {
     font-size: 30px;
-    // color: var(--brand-darkgrey);
-    color: linear-gradient(var(--brand-softpink),var(--brand-softpurple));;
     font-weight: 400;
+    color: var(--brand-darkgrey);
 }
 .restaurant-page__name__title__icone:focus .fa-heart
 {
     animation: heart-like 0.5s forwards;
 }
-// .full-heart
-// {
-    // font-size: 30px;
-    // color: var(--brand-softpink);
-    // margin-right: 5%;
-    // position: relative;
-    // top: -30px;
-    // visibility: hidden;
-// }
+.restaurant-page__entry__title--container,
+.restaurant-page__dish__title--container,
+.restaurant-page__desert__title--container
+{
+    width: 50px;
+}
+
 // Animations CSS
 
 //animations entrée, plat et dessert:
@@ -385,23 +382,23 @@ h1,h4 //,h2,h3,h5,h6
 }
 @keyframes heart-like {
     0%{
-        color: var(--brand-darkgrey);
-        font-weight: 400;
-        font-size: 28px;
+        // color: var(--brand-darkgrey);
+        // font-weight: 400;
+        font-size: 27px;
     }
     100%{
-        // color: linear-gradient(var(--brand-softpink),var(--brand-softpurple));
         font-weight: 600;
+        background: linear-gradient(var(--brand-softpink),var(--brand-softpurple));
+        background-clip: text;
+        color: transparent;
     }
     
 }
 @keyframes icon-rotate {
     0% {
-        // rotate: (0deg);
         transform: rotate(0deg);
     }
     100%{
-        // rotate: (360deg);
         transform: rotate(360deg);
     }
 }

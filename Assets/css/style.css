@@ -269,13 +269,19 @@ h1, h4 {
 
 .fa-heart {
   font-size: 30px;
-  color: linear-gradient(var(--brand-softpink), var(--brand-softpurple));
   font-weight: 400;
+  color: var(--brand-darkgrey);
 }
 
 .restaurant-page__name__title__icone:focus .fa-heart {
   -webkit-animation: heart-like 0.5s forwards;
           animation: heart-like 0.5s forwards;
+}
+
+.restaurant-page__entry__title--container,
+.restaurant-page__dish__title--container,
+.restaurant-page__desert__title--container {
+  width: 50px;
 }
 
 .restaurant-page__entry__card,
@@ -326,23 +332,27 @@ h1, h4 {
 
 @-webkit-keyframes heart-like {
   0% {
-    color: var(--brand-darkgrey);
-    font-weight: 400;
-    font-size: 28px;
+    font-size: 27px;
   }
   100% {
     font-weight: 600;
+    background: linear-gradient(var(--brand-softpink), var(--brand-softpurple));
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
   }
 }
 
 @keyframes heart-like {
   0% {
-    color: var(--brand-darkgrey);
-    font-weight: 400;
-    font-size: 28px;
+    font-size: 27px;
   }
   100% {
     font-weight: 600;
+    background: linear-gradient(var(--brand-softpink), var(--brand-softpurple));
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
   }
 }
 @-webkit-keyframes icon-rotate {
