@@ -295,6 +295,9 @@ h1,h4 //,h2,h3,h5,h6
     position: relative;
     bottom: 10px;
     margin-left: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 // Texte des cartes
 .restaurant-page__entry__card__text,.restaurant-page__dish__card__text,.restaurant-page__desert__card__text
@@ -468,7 +471,7 @@ h1,h4 //,h2,h3,h5,h6
 @keyframes fadein {
     0%{
         opacity: 0;
-        transform: translateY(5%);
+        transform: translateY(8%);
     }
     100%{
         opacity: 1;
@@ -566,7 +569,7 @@ h1,h4 //,h2,h3,h5,h6
     margin-left: 5%;
 }
 
-@media screen and (min-width: 768px) 
+@media screen and (min-width: 1450px) 
 {
     .restaurant-page-menu
     {

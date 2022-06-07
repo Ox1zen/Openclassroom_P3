@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./Assets/css/style.css">
     <!-- Importation des icones de font awesome -->
     <script src="https://kit.fontawesome.com/094820c2ba.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
     <!-- Importation des polices d'écriture -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +32,7 @@
             <!-- Image du logo du haut de la page -->
             <img class="header__logo" src="./Assets/Images/logo/ohmyfood.png" alt="Logo du site Oh my food en haut de la page">
         </header>
-
+        
         <!-- Contenu Principal de la page -->
         <main>
             <img class="restaurant-image" src="./Assets/Images/restaurants/la-palette-du-gout.jpg" alt="Image d'un plat du restaurant À la française">
@@ -39,77 +40,148 @@
             <div class="restaurant-page">
                 <div class="restaurant-page__name">
                     <h1 class="restaurant-page__name__title">La palette du goût</h1>
-                    <a class="restaurant-page__name__title__icone" title="J'aime"><i class="far fa-heart"></i></a>
+                    <a href="#" class="restaurant-page__name__title__icone" title="J'aime">
+                        <i class="far fa-heart"></i>
+                    </a>
                 </div>
+                
+                <div class="restaurant-page-menu">
+                    <!-- Partie contenant les entrée -->
+                    <section class="restaurant-page__entry">
+                        <div class="restaurant-page__entry__title--container">
+                            <h2 class="restaurant-page__entry__title">ENTRÉES</h2>
+                        </div>
 
-                <!-- Partie contenant les entrée -->
-                <section class="restaurant-page__entry">
-                    <h2 class="restaurant-page__entry__title">ENTRÉES</h2>
+                        <article class="restaurant-page__entry__card fade-1">
+                            <div class="test-animation-text">
+                                <h3 class="restaurant-page__entry__card__name">Fricassée d'escargot</h3>
+                                <p class="restaurant-page__entry__card__text">Au piment d'Espelette</p>
+                            </div>
+                            <div class="test-animation-price">
+                                <p class="restaurant-page__entry__card__price"><strong>25€</strong></p>
+                            </div>
+                            <div class="test-animation-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </article>
 
-                    <article class="restaurant-page__entry__card">
-                        <h3 class="restaurant-page__entry__card__name">Fricassée d'escargot</h3>
-                        <p class="restaurant-page__entry__card__text">Au piment d'Espelette</p>
-                        <p class="restaurant-page__entry__card__price">25€</p>
-                    </article>
+                        <article class="restaurant-page__entry__card fade-2">
+                            <div class="test-animation-text">
+                                <h3 class="restaurant-page__entry__card__name">Foie gras de canard mi-cuit</h3>
+                                <p class="restaurant-page__entry__card__text">Et ses copeaux de truffe noire</p>
+                            </div>
+                            <div class="test-animation-price">
+                                <p class="restaurant-page__entry__card__price"><strong>35€</strong></p>
+                            </div>
+                            <div class="test-animation-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </article>
 
-                    <article class="restaurant-page__entry__card">
-                        <h3 class="restaurant-page__entry__card__name">Foie gras de canard mi-cuit</h3>
-                        <p class="restaurant-page__entry__card__text">Et ses copeaux de truffe noire</p>
-                        <p class="restaurant-page__entry__card__price">35€</p>
-                    </article>
+                        <article class="restaurant-page__entry__card fade-3">
+                            <div class="test-animation-text">
+                                <h3 class="restaurant-page__entry__card__name">Oeuf au plat</h3>
+                                <p class="restaurant-page__entry__card__text">Assaisonné à la truffe sur lit de caviar</p>
+                            </div>
+                            <div class="test-animation-price">
+                                <p class="restaurant-page__entry__card__price"><strong>20€</strong></p>
+                            </div>
+                            <div class="test-animation-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </article>
+                    </section>
 
-                    <article class="restaurant-page__entry__card">
-                        <h3 class="restaurant-page__entry__card__name">Oeuf au plat</h3>
-                        <p class="restaurant-page__entry__card__text">Assaisonné à la truffe sur lit de caviar</p>
-                        <p class="restaurant-page__entry__card__price">20€</p>
-                    </article>
-                </section>
+                    <!-- Partie contenant les plats -->
+                    <section class="restaurant-page__dish">
+                        <div class="restaurant-page__dish__title--container">
+                            <h2 class="restaurant-page__dish__title">PLATS</h2>
+                        </div>                        
+                        <article class="restaurant-page__dish__card fade-5">
+                            <div class="test-animation-text">
+                                <h3 class="restaurant-page__dish__card__name">Filet de boeuf aux herbes</h3>
+                                <p class="restaurant-page__dish__card__text">Accompagné de sa ribambelle de légumes</p>    
+                            </div>
+                            <div class="test-animation-price">
+                                <p class="restaurant-page__dish__card__price"><strong>40€</strong></p>    
+                            </div>
+                            <div class="test-animation-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </article>
 
-                <!-- Partie contenant les plats -->
-                <section class="restaurant-page__dish">
-                    <h2 class="restaurant-page__dish__title">PLATS</h2>
+                        <article class="restaurant-page__dish__card fade-6">
+                            <div class="test-animation-text">
+                                <h3 class="restaurant-page__dish__card__name">Parmentier de queue de boeuf</h3>
+                                <p class="restaurant-page__dish__card__text">À la truffe noire sur sa purée de panais</p>    
+                            </div>
+                            <div class="test-animation-price">
+                                <p class="restaurant-page__dish__card__price"><strong>35€</strong></p>    
+                            </div>
+                            <div class="test-animation-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </article>
 
-                    <article class="restaurant-page__dish__card">
-                        <h3 class="restaurant-page__dish__card__name">Filet de boeuf aux herbes</h3>
-                        <p class="restaurant-page__dish__card__text">Accompagné de sa ribambelle de légumes</p>
-                        <p class="restaurant-page__dish__card__price">40€</p>
-                    </article>
+                        <article class="restaurant-page__dish__card fade-7">
+                            <div class="test-animation-text">
+                                <h3 class="restaurant-page__dish__card__name">Filet de turbot</h3>
+                                <p class="restaurant-page__dish__card__text">Aux agrumes</p>    
+                            </div>
+                            <div class="test-animation-price">
+                                <p class="restaurant-page__dish__card__price"><strong>44€</strong></p>    
+                            </div>
+                            <div class="test-animation-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </article>
+                    </section>
 
-                    <article class="restaurant-page__dish__card">
-                        <h3 class="restaurant-page__dish__card__name">Parmentier de queue de boeuf</h3>
-                        <p class="restaurant-page__dish__card__text">À la truffe noire sur sa purée de panais</p>
-                        <p class="restaurant-page__dish__card__price">35€</p>
-                    </article>
+                    <!-- Partie Contenant les desserts -->
+                    <section class="restaurant-page__desert">
+                        <div class="restaurant-page__desert__title--container">
+                            <h2 class="restaurant-page__desert__title">DESSERTS</h2>
+                        </div>
+                        <article class="restaurant-page__desert__card fade-8">
+                            <div class="test-animation-text">
+                                <h3 class="restaurant-page__desert__card__name">Paris-Brest</h3>
+                                <p class="restaurant-page__desert__card__text">Revisité</p>
+                            </div>
+                            <div class="test-animation-price">
+                                <p class="restaurant-page__desert__card__price"><strong>18€</strong></p>
+                            </div>
+                            <div class="test-animation-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </article>
 
-                    <article class="restaurant-page__dish__card">
-                        <h3 class="restaurant-page__dish__card__name">Filet de turbot</h3>
-                        <p class="restaurant-page__dish__card__text">Aux agrumes</p>
-                        <p class="restaurant-page__dish__card__price">44€</p>
-                    </article>
-                </section>
+                        <article class="restaurant-page__desert__card fade-9">
+                            <div class="test-animation-text">
+                                <h3 class="restaurant-page__desert__card__name">Macaron au chocolat d'exception</h3>
+                                <p class="restaurant-page__desert__card__text">Et glace à la vanille de Madagascar</p>
+                            </div>
+                            <div class="test-animation-price">
+                                <p class="restaurant-page__desert__card__price"><strong>22€</strong></p>
+                            </div>
+                            <div class="test-animation-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </article>
 
-                <!-- Partie Contenant les desserts -->
-                <section class="restaurant-page__desert">
-                    <h2 class="restaurant-page__desert__title">DESSERTS</h2>
-
-                    <article class="restaurant-page__desert__card">
-                        <h3 class="restaurant-page__desert__card__name">Paris-Brest</h3>
-                        <p class="restaurant-page__desert__card__text">Revisité</p>
-                        <p class="restaurant-page__desert__card__price">18€</p>
-                    </article>
-
-                    <article class="restaurant-page__desert__card">
-                        <h3 class="restaurant-page__desert__card__name">Macaron au chocolat d'exception</h3>
-                        <p class="restaurant-page__desert__card__text">Et glace à la vanille de Madagascar</p>
-                        <p class="restaurant-page__desert__card__price">22€</p>
-                    </article>
-
-                    <article class="restaurant-page__desert__card">
-                        <h3 class="restaurant-page__desert__card__name">Mousse au chocolat</h3>
-                        <p class="restaurant-page__desert__card__text">Au piment d'Espelette et à la truffe noire</p>
-                        <p class="restaurant-page__desert__card__price">23€</p>
-                    </article>
-                </section>
+                        <article class="restaurant-page__desert__card fade-10">
+                            <div class="test-animation-text">
+                                <h3 class="restaurant-page__desert__card__name">Mousse au chocolat</h3>
+                                <p class="restaurant-page__desert__card__text">Au piment d'Espelette et à la truffe noire</p>
+                            </div>
+                            <div class="test-animation-price">
+                                <p class="restaurant-page__desert__card__price"><strong>23€</strong></p>
+                            </div>
+                            <div class="test-animation-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </article>
+                    </section>
+                </div>
                 <!-- Bouton "Commander" en bas du Menu -->
                 <button class="restaurant-page__place-order-button">Commander</button>
             </div>
