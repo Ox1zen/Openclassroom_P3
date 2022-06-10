@@ -190,7 +190,38 @@ h1, h4 {
   flex-direction: column;
 }
 
+.new-tag {
+  position: relative;
+  float: right;
+  top: 40px;
+  margin-right: 20px;
+  margin-top: -30px;
+  background-color: #99E2D0;
+  color: #4f756c;
+  height: 30px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.restaurants-list__card__link {
+  text-decoration: none;
+  color: var(--brand-darkgrey);
+}
+
+.restaurants-list__card__link:hover {
+  color: var(--brand-softpurple);
+}
+
+.restaurants-list__card__link:active {
+  color: var(--brand-softpink);
+}
+
 .restaurants-list__card--top {
+  position: relative;
   height: 75%;
 }
 
@@ -218,6 +249,8 @@ h1, h4 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  position: relative;
+  z-index: 1;
 }
 
 .restaurants-list__card__title {
@@ -535,6 +568,96 @@ h1, h4 {
   }
   100% {
     opacity: 1;
+  }
+}
+#bloc-page {
+  height: 100vh;
+  -webkit-animation: bloc-page-hidden 3s forwards;
+          animation: bloc-page-hidden 3s forwards;
+  overflow-y: hidden;
+}
+
+.fa-spinner {
+  display: block;
+  font-size: 200px;
+  -webkit-animation: loading-spinner 3s forwards;
+          animation: loading-spinner 3s forwards;
+  color: var(--brand-softpurple);
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-color: var(--brand-darkwhite);
+  -webkit-animation: spinner-div 3s forwards;
+          animation: spinner-div 3s forwards;
+  z-index: -999;
+  overflow-y: none;
+}
+
+@-webkit-keyframes loading-spinner {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+    z-index: 99;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+    z-index: -99;
+  }
+}
+
+@keyframes loading-spinner {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+    z-index: 99;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+    z-index: -99;
+  }
+}
+@-webkit-keyframes spinner-div {
+  0% {
+    opacity: 1;
+    z-index: 99;
+  }
+  100% {
+    opacity: 0;
+    z-index: -99;
+  }
+}
+@keyframes spinner-div {
+  0% {
+    opacity: 1;
+    z-index: 99;
+  }
+  100% {
+    opacity: 0;
+    z-index: -99;
+  }
+}
+@-webkit-keyframes bloc-page-hidden {
+  0% {
+    overflow-y: hidden;
+  }
+  100% {
+    overflow-y: scroll;
+  }
+}
+@keyframes bloc-page-hidden {
+  0% {
+    overflow-y: hidden;
+  }
+  100% {
+    overflow-y: scroll;
   }
 }
 .test-animation-icon {

@@ -25,6 +25,9 @@
 
 <!-- Corps de la page -->
 <body>
+    <div class="loading-spinner">
+        <i class="fas fa-spinner"></i>
+    </div>
     <div id="bloc-page">
         <!-- Haut de la page -->
         <header class="header">
@@ -99,45 +102,61 @@
             <!-- liste des restaurants -->
             <section class="restaurants-list">
                 <h2 class="restaurants-list__title">Restaurants</h2>
-
                 <article class="restaurants-list__card">
                     <div class="restaurants-list__card--top">
-                        <img class="restaurants-list__card__image" src="./Assets/Images/restaurants/la-palette-du-gout.jpg" alt="Image de prévisualisation du restaurant nommé La palette du goût">
+                        <div class="new-tag">
+                            <p>Nouveau</p>
+                        </div>
+                        <a href="./la-palette-du-gout.html" class="restaurants-list__card__link">
+                            <img class="restaurants-list__card__image" src="./Assets/Images/restaurants/la-palette-du-gout.jpg" alt="Image de prévisualisation du restaurant nommé La palette du goût">
+                        </a>
                     </div>
                     <div class="restaurants-list__card--bottom">
                         <div class="restaurants-list__card--bottom__text">
-                            <h3 class="restaurants-list__card__title">La palette du goût</h3>
-                            <p class="restaurants-list__card__text">Ménilmontant</p>
+                            <a href="./la-palette-du-gout.html" class="restaurants-list__card__link">
+                                <h3 class="restaurants-list__card__title">La palette du goût</h3>
+                                <p class="restaurants-list__card__text">Ménilmontant</p>
+                            </a>
                         </div>
                         <div class="restaurants-list__card--bottom__icone">
                             <a href="#" class="restaurants-list__card__icone" title="J'aime"><i class="far fa-heart"></i></a>
                         </div>
                     </div>
                 </article>
-
                 <article class="restaurants-list__card">
                     <div class="restaurants-list__card--top">
-                        <img class="restaurants-list__card__image" src="./Assets/Images/restaurants/la-note-enchantée.jpg" alt="Image de prévisualisation du restaurant nommé La palette du goût">
+                        <div class="new-tag">
+                            <p>Nouveau</p>
+                        </div>
+                        <a href="./la-note-enchantee.html" class="restaurants-list__card__link">
+                            <img class="restaurants-list__card__image" src="./Assets/Images/restaurants/la-note-enchantée.jpg" alt="Image de prévisualisation du restaurant nommé La palette du goût">
+                        </a>
                     </div>
                     <div class="restaurants-list__card--bottom">
                         <div class="restaurants-list__card--bottom__text">
-                            <h3 class="restaurants-list__card__title">La note enchantée</h3>
-                            <p class="restaurants-list__card__text">Charonne</p>
+                                <a href="./la-note-enchantee.html" class="restaurants-list__card__link">
+                                    <h3 class="restaurants-list__card__title">La note enchantée</h3>
+                                    <p class="restaurants-list__card__text">Charonne</p>
+                                </a>
+                            </div>
+                            <div class="restaurants-list__card--bottom__icone">
+                                <a href="#" class="restaurants-list__card__icone" title="J'aime"><i class="far fa-heart"></i></a>
+                            </div>
                         </div>
-                        <div class="restaurants-list__card--bottom__icone">
-                            <a href="#" class="restaurants-list__card__icone" title="J'aime"><i class="far fa-heart"></i></a>
-                        </div>
-                    </div>
-                </article>
+                    </article>
 
                 <article class="restaurants-list__card">
                     <div class="restaurants-list__card--top">
-                        <img class="restaurants-list__card__image" src="./Assets/Images/restaurants/a-la-francaise.jpg" alt="Image de prévisualisation du restaurant nommé La palette du goût">
+                        <a href="./a-la-francaise.html" class="restaurants-list__card__link">
+                            <img class="restaurants-list__card__image" src="./Assets/Images/restaurants/a-la-francaise.jpg" alt="Image de prévisualisation du restaurant nommé La palette du goût">
+                        </a>
                     </div>
                     <div class="restaurants-list__card--bottom">
                         <div class="restaurants-list__card--bottom__text">
-                            <h3 class="restaurants-list__card__title">À la française</h3>
-                            <p class="restaurants-list__card__text">Cité Rouge</p>
+                            <a href="./a-la-francaise.html" class="restaurants-list__card__link">
+                                <h3 class="restaurants-list__card__title">À la française</h3>
+                                <p class="restaurants-list__card__text">Cité Rouge</p>
+                            </a>
                         </div>
                         <div class="restaurants-list__card--bottom__icone">
                             <a href="#" class="restaurants-list__card__icone" title="J'aime"><i class="far fa-heart"></i></a>
@@ -147,12 +166,16 @@
                 
                 <article class="restaurants-list__card">
                     <div class="restaurants-list__card--top">
-                        <img class="restaurants-list__card__image" src="./Assets/Images/restaurants/le-delice-des-sens.jpg" alt="Image de prévisualisation du restaurant nommé La palette du goût">
+                        <a href="./le-delice-des-sens.html" class="restaurants-list__card__link">
+                            <img class="restaurants-list__card__image" src="./Assets/Images/restaurants/le-delice-des-sens.jpg" alt="Image de prévisualisation du restaurant nommé La palette du goût">
+                        </a>
                     </div>
                     <div class="restaurants-list__card--bottom">
                         <div class="restaurants-list__card--bottom__text">
-                            <h3 class="restaurants-list__card__title">Le délice des sens</h3>
-                            <p class="restaurants-list__card__text">Folie-Méricourt</p>
+                            <a href="./le-delice-des-sens.html" class="restaurants-list__card__link">
+                                <h3 class="restaurants-list__card__title">Le délice des sens</h3>
+                                <p class="restaurants-list__card__text">Folie-Méricourt</p>
+                            </a>
                         </div>
                         <div class="restaurants-list__card--bottom__icone">
                             <a href="#" class="restaurants-list__card__icone" title="J'aime"><i class="far fa-heart"></i></a>
@@ -195,7 +218,7 @@
                 </li>
 
                 <li class="footer__list__item">
-                    <a class="footer__list__item__link" href="">
+                    <a class="footer__list__item__link" href="mailto:fake@fake.fake">
                         Contact
                     </a>
                 </li>
