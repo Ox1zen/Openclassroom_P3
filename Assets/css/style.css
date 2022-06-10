@@ -19,22 +19,24 @@ h1, h4 {
 }
 
 .location {
+  box-shadow: inset 0px 7px 12px -6px rgb(167, 167, 167);
   background-color: var(--brand-darkwhite);
   color: var(--brand-darkgrey);
-  height: 72px;
+  height: 67px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .fa-map-marker-alt {
-  top: 15px;
-  left: -30px;
-  font-size: 25px;
+  margin-right: 20px;
+  font-size: 20px;
 }
 
 .location__text {
   font-size: 20px;
   font-weight: 600;
+  margin: 0;
 }
 
 .intro {
@@ -46,17 +48,17 @@ h1, h4 {
   padding-left: 20%;
   padding-right: 20%;
   margin-bottom: 5px;
-  font-size: 28px;
-  padding-top: 20px;
+  margin-top: 0;
+  font-size: 32px;
+  padding-top: 40px;
 }
 
 .intro__text {
   padding-left: 10%;
   padding-right: 10%;
-  font-size: 18px;
+  font-size: 24px;
   color: var(--brand-darkgrey);
-  font-weight: 400;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .intro__button {
@@ -66,7 +68,7 @@ h1, h4 {
   border-radius: 50px;
   font-size: 18px;
   height: 60px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .tutorial {
@@ -76,8 +78,9 @@ h1, h4 {
 .tutorial__title {
   margin-left: 5%;
   font-size: 34px;
-  padding-top: 30px;
+  padding-top: 60px;
   margin-bottom: 50px;
+  margin-top: 0;
 }
 
 .tutorial__link {
@@ -87,16 +90,60 @@ h1, h4 {
   background-color: #f3f3f3;
   border-radius: 30px;
   display: flex;
-  justify-content: center;
   align-items: center;
   margin-left: 5%;
   margin-bottom: 35px;
+  overflow: visible;
+}
+
+.tutorial__link:hover .fa-mobile-alt,
+.tutorial__link:hover .fa-list-ul,
+.tutorial__link:hover .fa-store {
+  color: var(--brand-softpurple);
+}
+
+.tutorial__link:hover {
+  background-color: #f5edff;
 }
 
 .fa-mobile-alt {
   color: var(--brand-darkgrey);
   font-size: 30px;
-  left: 0px;
+}
+
+.fa-list-ul {
+  color: var(--brand-darkgrey);
+  font-size: 25px;
+}
+
+.fa-store {
+  color: var(--brand-darkgrey);
+  font-size: 20px;
+}
+
+.fa-spinner-third {
+  font-size: 30px;
+  color: black;
+}
+
+.tutorial__link__number {
+  width: 20%;
+  position: relative;
+  right: 15px;
+}
+
+.tutorial__link__icon {
+  width: 10%;
+}
+
+.tutorial__link__text--zone {
+  width: 70%;
+}
+
+.tutorial__link__text {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--brand-darkgrey);
 }
 
 .tutorial__link__text__circle-number {
@@ -105,20 +152,13 @@ h1, h4 {
   border-radius: 50px;
   background-color: var(--brand-softpurple);
   color: var(--brand-white);
-  position: absolute;
-  left: -11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .tutorial__link__text__circle-number__text {
-  margin-top: 15%;
-  margin-left: 30%;
   font-size: 18px;
-}
-
-.tutorial__link__text {
-  font-size: 22px;
-  font-weight: 600;
-  color: var(--brand-darkgrey);
 }
 
 .restaurants-list {
@@ -141,31 +181,52 @@ h1, h4 {
 
 .restaurants-list__card {
   width: 90%;
-  height: 225px;
+  height: 300px;
   background-color: var(--brand-white);
   margin-bottom: 50px;
   border-radius: 20px;
   box-shadow: 0px -5px 30px rgb(221, 221, 221);
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurants-list__card--top {
+  height: 75%;
+}
+
+.restaurants-list__card--bottom {
+  display: flex;
+  height: 25%;
+}
+
+.restaurants-list__card--bottom__text {
+  width: 85%;
+  vertical-align: middle;
+  margin-left: 3%;
+}
+
+.restaurants-list__card--bottom__icone {
+  width: 15%;
+  display: flex;
+  align-items: center;
 }
 
 .restaurants-list__card__image {
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  height: 150px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .restaurants-list__card__title {
-  top: -10px;
-  margin-bottom: -10px;
-  margin-left: 5%;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 .restaurants-list__card__text {
-  top: -23px;
-  margin-left: 5%;
+  margin-top: 5px;
 }
 
 .header {
@@ -276,7 +337,8 @@ h1, h4 {
   color: var(--brand-darkgrey);
 }
 
-.restaurant-page__name__title__icone:focus .fa-heart {
+.restaurant-page__name__title__icone:focus .fa-heart,
+.restaurants-list__card__icone:focus .fa-heart {
   -webkit-animation: heart-like 0.5s forwards;
           animation: heart-like 0.5s forwards;
 }
