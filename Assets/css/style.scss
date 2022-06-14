@@ -187,7 +187,7 @@ h1,h4 //,h2,h3,h5,h6
 }
 .restaurants-list
 {
-    background-color: var(--brand-darkwhite)
+    background-color: var(--brand-darkwhite);
 }
 .restaurants-list__title
 {
@@ -739,6 +739,7 @@ h1,h4 //,h2,h3,h5,h6
 
 @media screen and (min-width: 1450px) 
 {
+    // Page des restaurants
     .restaurant-page-menu
     {
         display: flex;
@@ -748,5 +749,31 @@ h1,h4 //,h2,h3,h5,h6
     {
         width: 30%;
     }
-    
+    //
+    .test-version--desktopall
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .test-version--desktop,.test-version--desktop1
+    {
+        width: 50%;
+    }
+    .restaurants-list
+    {
+        display: flex;
+        flex-wrap: wrap;
+        height: 932px;
+    }
+    .restaurants-list__card
+    {
+        width: 43%;
+    }
+    .restaurants-list__title
+    {
+        font-size: 32px;
+        // margin-bottom: 20px;
+        width: 100%;
+    }
 }

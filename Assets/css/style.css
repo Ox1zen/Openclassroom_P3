@@ -740,4 +740,29 @@ h1, h4 {
   .restaurant-page__entry, .restaurant-page__dish, .restaurant-page__desert {
     width: 30%;
   }
+
+  .test-version--desktopall {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .test-version--desktop, .test-version--desktop1 {
+    width: 50%;
+  }
+
+  .restaurants-list {
+    display: flex;
+    flex-wrap: wrap;
+    height: 932px;
+  }
+
+  .restaurants-list__card {
+    width: 43%;
+  }
+
+  .restaurants-list__title {
+    font-size: 32px;
+    width: 100%;
+  }
 }
