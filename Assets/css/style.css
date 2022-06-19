@@ -133,6 +133,7 @@ h1, h4 {
 }
 
 .tutorial__link__icon {
+  text-align: right;
   width: 10%;
 }
 
@@ -144,6 +145,7 @@ h1, h4 {
   font-size: 22px;
   font-weight: 600;
   color: var(--brand-darkgrey);
+  text-align: center;
 }
 
 .tutorial__link__text__circle-number {
@@ -163,6 +165,7 @@ h1, h4 {
 
 .restaurants-list {
   background-color: var(--brand-darkwhite);
+  padding-bottom: 1px;
 }
 
 .restaurants-list__title {
@@ -265,7 +268,6 @@ h1, h4 {
 .header {
   display: flex;
   align-items: center;
-  justify-content: center;
   height: 60px;
   box-shadow: 0px -5px 30px rgb(0, 0, 0);
 }
@@ -273,14 +275,15 @@ h1, h4 {
 .fa-arrow-left {
   font-size: 25px;
   color: var(--brand-darkgrey);
-  position: absolute;
-  left: 0px;
+}
+
+.header__arrow-link {
   margin-left: 5%;
-  top: 15px;
 }
 
 .header__logo {
   height: 32px;
+  margin: auto;
 }
 
 .restaurant-image {
@@ -288,8 +291,7 @@ h1, h4 {
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
-  position: absolute;
-  top: 60px;
+  position: relative;
   z-index: -1;
 }
 
@@ -297,7 +299,7 @@ h1, h4 {
   background-color: var(--brand-almostwhite);
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
-  margin-top: 240px;
+  margin-top: -50px;
 }
 
 .restaurant-page__name {
@@ -321,6 +323,7 @@ h1, h4 {
 .restaurant-page__entry, .restaurant-page__dish, .restaurant-page__desert {
   margin-top: 30px;
   margin-left: 5%;
+  margin-right: 5%;
 }
 
 .restaurant-page__entry__title, .restaurant-page__dish__title, .restaurant-page__desert__title {
@@ -334,7 +337,6 @@ h1, h4 {
   margin-bottom: 20px;
   background-color: var(--brand-white);
   border-radius: 20px;
-  width: 90%;
   box-shadow: 0px 0px 30px #d3d3d3;
   height: 75px;
 }
@@ -596,7 +598,7 @@ h1, h4 {
   -webkit-animation: spinner-div 3s forwards;
           animation: spinner-div 3s forwards;
   z-index: -999;
-  overflow-y: none;
+  overflow-y: hidden;
 }
 
 @-webkit-keyframes loading-spinner {
